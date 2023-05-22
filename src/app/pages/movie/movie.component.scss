@@ -1,0 +1,35 @@
+@import '../../../styles/colors';
+
+.poster{
+    max-width: 100%;
+}
+
+.overview{
+    line-height: 1.7;
+}
+
+.stat{
+    display: flex;
+    margin-bottom: 6px;
+
+    .label{
+        width: 150px;
+        font-weight: bold;
+    }
+
+    .value{
+        color: $primaryColor;
+    }
+}
+
+.actor{
+    padding: 2%;
+    img{
+        width:100%;
+    }
+    span{
+        display: block;
+        text-align: center;
+        margin: 10px 0px;
+    }
+}

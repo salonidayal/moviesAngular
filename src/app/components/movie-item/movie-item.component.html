@@ -1,0 +1,13 @@
+
+<ng-container *ngIf="itemData">
+<a class="movie-item" style="position:relative;min-height: 325px;" [routerLink]="'/movie/'+itemData.id" >
+    <div class="card movie-item-rating" style="position: absolute; display:flex; align-items:center; top: 10px; left: 10px; background-color:white; padding: 5px 10px; border-radius: 5px;">
+        <i class="app-icon" style="margin-right: 5px;color:#d4af37;">star</i>
+        <span> {{itemData.vote_average}} </span>/10
+    </div>
+    <div class="movie-item-image">
+        <img style="width:100%; height:100%;object-fit:cover;" [src]="imagesSizes.medium+itemData.poster_path" alt="itemData.title">
+    </div> 
+    <div class="movie-item-title" style="font-weight: bold; margin:0.5rem; display:flex; align-items: center;height: 30px;"> {{itemData.title}} </div>
+</a>
+</ng-container>

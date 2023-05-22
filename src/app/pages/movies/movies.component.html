@@ -1,0 +1,9 @@
+<div class="container">
+    <div class="grid">
+        <div class="col-6 md:col-3 lg:col-3" *ngFor="let movie of movies"> 
+            <app-movie-item [itemData] = "movie" ></app-movie-item> 
+        </div>
+       
+    </div>
+</div>
+
